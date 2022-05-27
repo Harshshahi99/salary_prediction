@@ -14,7 +14,7 @@ le_country = data['le_country']
 le_education = data['le_education']
 
 def show_predict_page():  # sourcery skip
-    st.title("Software Developer Prediction")
+    st.title("Salary Prediction")
 
     st.write("""### We need some information to predict the salary""")
 
@@ -56,3 +56,9 @@ def show_predict_page():  # sourcery skip
         
         salary = regressor.predict(person_info)
         st.subheader(f"The estimated salary is ${salary[0]:.2f}")
+        st.caption("The above prediction is based on Global Salary Prediction,You can convert it into your country's currency by Multiplying it with the exchange rate of your country.")
+        st.subheader('Developed by:')
+        st.caption('Harsh Vikram Shahi')
+        st.caption('Devesh Dutt')
+        st.caption('Aman Yadav')
+        st.caption('Alok Kumar')
